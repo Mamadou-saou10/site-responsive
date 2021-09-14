@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Ajout de bootstrap -->
+    <script src="https://kit.fontawesome.com/6349b8c636.js" crossorigin="anonymous"></script> <!-- Ajout des icones avec fontawesome-->
+    <title>Open Anchor Company</title>
+  </head>
+  <body>
+        <!-- <i class="fab fa-facebook"></i>  // syntaxe pour utilisé fontawesome -->
+
+        <!-- CREATION DU MENU DE NAVIGATION -->
+        <!-- Nav -->
+            <nav class="navbar navbar-expand-md navbar-light bg-dark">   <!--Ajout de deu classes bootstrap: first class =>navbar(rendre la barre de navigation flexible) et secondly class =>navbar-expand-md(rendre la navbar responsive)  navbar_light(ecriture en gris)-->
+                <a href="#"><i class="fab fa-accusoft text-warning fa-2x "></i></a>
+                <!-- Affichage du boutton pour remplacer le menu de nav avec button  -->
+                <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
+
+                <!-- Regrouper tout les éléments dans un div -->
+                <div class="collapse navbar-collapse justify-content-between" id="nav"> <!-- Collapse fait disparaitre les éléments, justify-content-between envoi la barre de recherche au fond  -->
+                <ul class="navbar-nav"> <!--Mettre sur la même ligne les menus et enlever les points-->
+                    <li class="nav-item"><a class="nav-link text-light font-wright-bold text-uppercase px-3" href="#">HOME</a></li>
+                     <!-- les espaciers avec "nav-link", Mettre en gras avec "font-wright-bold"-->
+                    <li class="nav-item"><a class="nav-link text-light font-wright-bold text-uppercase px-3" href="#">Skills</a></li>
+                    <li class="nav-item dropdown"> <!-- Avoir l'effet dropdown -->
+                        <a class="nav-link text-light font-wright-bold text-uppercase px-3 dropdown-toggle" data-toggle="dropdown" href="#">Projects</a> <!-- "data-toggle="dropdown" permet de changer de mode -->
+                        <div class="dropdown-menu"> <!-- Faire du dropdown dans projects -->
+                            <a class="dopdown-item" href="#">Project 1</a> <!-- Avoir des sous projets dans projet (class="dropdown-item") -->
+                            <a class="dopdown-item" href="#">Project 2</a>
+                            <a class="dopdown-item" href="#">Project 3</a>
+                            <a class="dopdown-item" href="#">Project 4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-light font-wright-bold text-uppercase px-3" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link text-light font-wright-bold text-uppercase px-3" href="#">Contact</a></li>
+                </ul>
+                <!-- Barre de recherche -->
+                <form class="form-inline ml-3"> <!--  -->
+                    <div class="input-group"> <!-- Grouper les deux eéléments (zone de recherche et l'icon de recherche) -->
+                        <input type="text"  class="form-control" placeholder="search"> <!-- Pour rendre la zone de recherche plus élégante -->
+                        <div class="input-group-append"> <!-- enlever l'espace entre les deux éléments -->
+                            <button type="button" class="btn bg-light"> <i class="fas fa-search search text-muted"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </nav>
+        <!-- End of Nav -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
